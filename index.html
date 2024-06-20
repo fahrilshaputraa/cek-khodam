@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Yuu - Temukan Khodam Anda</title>
+    <title>Temukan Khodam Anda</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> </head>
+    <link rel="stylesheet" href="style.css">
 <body>
-    <div class="container">
-        <h1>Check Khodam Dulu Yuu</h1>
-        <input type="text" id="namaInput" class="form-control" placeholder="Masukkan nama Anda" onkeydown="handleKeyPress(event)">
-        <button onclick="submitNama()" class="btn btn-primary mt-2">Submit</button>
+    <div class="container mt-3">
+        <div class="col-md-8 col-10 relative mx-auto">
+            <img src="img/background.png" class="img-fluid mx-auto d-block" alt="">
+            <div class="inputan d-flex">
+                <input type="text" id="namaInput" class="form-control" placeholder="Masukkan nama Anda" onkeydown="handleKeyPress(event)">
+                <button onclick="submitNama()" class="btn btn-secondary">Submit</button>
+            </div>
+        </div>
+        <div class="title text-center">
+            <h1 class="mt-4 fw-bold">CEK KHODAM</h1>
+            <small class="text-muted p-0 m-0">Dijamin gacor 100% pasti benar.</small>
+        </div>
         <ul id="result" class="list-group mt-3"></ul>
     </div>
 

@@ -1,17 +1,21 @@
-body {
-    font-family: sans-serif;
-    text-align: center;
+.inputan {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
 }
-
-#result {
-    margin-top: 20px;
-    font-weight: bold;
+img {
+    width: 70%;
 }
-#result ul {
-    list-style: none; 
-    padding: 0; 
+button {
+    border-start-start-radius: 0 !important;
+    border-end-start-radius: 0 !important;
+    border-end-end-radius: 20px !important;
+    border-start-end-radius: 20px !important;
+    padding-right: 20px !important;
 }
-
-#result li {
-    margin-bottom: 5px; 
+#namaInput {
+    border-start-end-radius: 0 !important;
+    border-end-end-radius: 0 !important;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
 }
