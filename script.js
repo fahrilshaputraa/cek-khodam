@@ -202,7 +202,7 @@ function submitNama() {
           listItem.textContent = `${nama} tidak punya khodam.`;
       }
   
-      resultList.appendChild(listItem);
+      resultList.prepend(listItem);
       namaInput.value = ""; 
   }
 
