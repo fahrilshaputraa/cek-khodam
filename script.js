@@ -185,11 +185,11 @@ const khodamList = [
   ];
   
 const resultList = document.getElementById("result");
+const namaInput = document.getElementById("namaInput");
 
 function submitNama() {
-      const namaInput = document.getElementById("namaInput");
       const nama = namaInput.value;
-      const punyaKhodam = Math.random() < 0.4;
+      const punyaKhodam = Math.random() < 0.2;
   
       const listItem = document.createElement("li");
       listItem.classList.add("list-group-item");
@@ -207,7 +207,9 @@ function submitNama() {
   }
 
 function handleKeyPress(event) {
-    if (event.key === "Enter") {
+    if(namaInput.value === "") {    
+        return;
+    }else if (event.key === "Enter") {
         submitNama();
     }
 }
