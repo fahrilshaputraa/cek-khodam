@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#result ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+#result li {
+    margin-bottom: 5px; 
+}
