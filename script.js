@@ -177,8 +177,7 @@ const resultList = document.getElementById("result");
 const namaInput = document.getElementById("namaInput");
 
 function submitNama() {
-      const nama = namaInput.value;
-      nama[0].toUpperCase();
+      const nama = namaInput.value[0].toUpperCase() + namaInput.value.slice(1);
       const punyaKhodam = Math.random() < 0.5;
   
       const listItem = document.createElement("li");
@@ -187,7 +186,7 @@ function submitNama() {
       if (punyaKhodam) {
           const khodamIndex = Math.floor(Math.random() * khodamList.length);
           const [namaKhodam, keteranganKhodam] = khodamList[khodamIndex];
-          listItem.innerHTML = `${nama} Punya ${namaKhodam}. <br> <small class="text-muted">${keteranganKhodam}</small>`;
+          listItem.innerHTML = `<b>${nama}</b> Punya ${namaKhodam}. <br> <small class="text-muted">${keteranganKhodam}</small>`;
       } else {
           listItem.textContent = `${nama} tidak punya khodam.`;
       }
