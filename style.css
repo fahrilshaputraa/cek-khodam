@@ -19,39 +19,3 @@ button {
     border-start-start-radius: 20px;
     border-end-start-radius: 20px;
 }
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.input-group {
-    max-width: 100%;
-}
-.container div{
-    width: 60% !important;
-}
-
-@media (max-width: 576px) {
-    .container div{
-        width: 100% !important;
-    }
-    .input-group {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .input-group input {
-        margin-bottom: 10px;
-    }
-
-    .input-group-append {
-        width: 100%;
-    }
-
-    .input-group-append .btn {
-        width: 100%;
-    }
-}
