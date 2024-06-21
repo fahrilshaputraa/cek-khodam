@@ -178,6 +178,7 @@ const namaInput = document.getElementById("namaInput");
 
 function submitNama() {
       const nama = namaInput.value;
+      nama.capitalizeWords();
       const punyaKhodam = Math.random() < 0.5;
   
       const listItem = document.createElement("li");
