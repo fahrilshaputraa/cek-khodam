@@ -202,3 +202,15 @@ function handleKeyPress(event) {
         submitNama();
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var socket = io("http://172.16.14.146:5001");
+    setTimeout(function(){
+        socket.on('new_comment', function(data) {
+            document.getElementById('namaInput').value = data.comment;
+            setTimeout(function(){
+                submitNama();
+            }, 800)
+        });
+    }, 1500);
+});
