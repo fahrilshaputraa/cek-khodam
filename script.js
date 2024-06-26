@@ -178,7 +178,7 @@ const namaInput = document.getElementById("namaInput");
 
 function submitNama() {
       const nama = namaInput.value[0].toUpperCase() + namaInput.value.slice(1);
-      const punyaKhodam = Math.random() < 0.5;
+      const punyaKhodam = Math.random() < 0.8;
   
       const listItem = document.createElement("li");
       listItem.classList.add("list-group-item");
