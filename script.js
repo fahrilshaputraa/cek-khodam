@@ -38,7 +38,7 @@ function handleKeyPress(event) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    var socket = io("http://172.16.14.146:5001");
+    var socket = io("https://livetiktok.dev-sti-group.biz.id");
     setTimeout(function(){
         socket.on('new_comment', function(data) {
             document.getElementById('namaInput').value = data.comment;
