@@ -4,13 +4,17 @@ from TikTokLive.events import ConnectEvent, GiftEvent, CommentEvent, LikeEvent
 from flask import Flask
 from flask_socketio import SocketIO, emit
 import threading
+import argparse
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins="*")
+parser = argparse.ArgumentParser(description="TikTok Live Client with Flask-SocketIO")
+parser.add_argument('--unique_id', type=str, required=True, help='Unique ID for TikTok Live Client')
+arg = parser.parse_args()
 
 client: TikTokLiveClient = TikTokLiveClient(
-    unique_id="@cekkhodammatabatin",
+    unique_id=arg.unique_id,
 )
 
 userGift = []
